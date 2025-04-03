@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container {
+          display: grid;
+          grid-template-columns: repeat(4, 1fr);
+          grid-template-rows: repeat(10, 1fr);
+          text-align: center;
+          max-width: 800px;
+          margin: auto;
+        }
+        .Header {
+            grid-column-start: 1;
+            grid-column-end: 4;
+            background-color: lightskyblue;
+            padding: 10px;
+            text-align: center;
+            height: 20px;
+            grid-row-start: 1;
+            grid-row-end: 2;
+        }
+        .Path {
+            grid-column-start: 1;
+            grid-column-end: 4;
+            background-color: lightpink;
+            padding: 10px;
+            text-align: center;
+            height: 20px;
+            grid-row-start: 2;
+            grid-row-end: 3;
+        }
+        .Docktop {
+            grid-column-start: 1;
+            grid-column-end: 4;
+            background-color: yellow;
+            padding: 10px;
+            text-align: center;
+            height: 20px;
+            grid-row-start: 3;
+            grid-row-end: 4;
+        }
+        .Content {
+            grid-column-start: 1;
+            grid-column-end: 3;
+            grid-row-start: 4;
+            grid-row-end: 9;
+            background-color: lightgray;
+            padding: 10px;
+            text-align: center;
+            width: 380px;
+        }
+        .Dockright {
+            grid-column-start: 3;
+            grid-column-end: 4;
+            grid-row-start: 4;
+            grid-row-end: 9;
+            background-color: lightgreen;
+            padding: 10px;
+            text-align: center;
+            width: 200px;
+        }
+        .Footer {
+            grid-column-start: 1;
+            grid-column-end: 4;
+            grid-row-start: 9;
+            grid-row-end: 10;
+            background-color: lightsalmon;
+            padding: 10px;
+            text-align: center;
+            height: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+       <div class="Header">Header</div>
+       <div class="Path">Path</div>
+       <div class="Docktop">Docktop</div>
+       <div class="Content">Content</div>
+       <div class="Dockright">Dockright</div>
+       <div class="Footer"><Footer>Footer</Footer></div>
+    </div>        
+</body>
+</html>
